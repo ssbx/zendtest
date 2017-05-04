@@ -8,6 +8,7 @@ data/cache/
 data/sessions/
 data/tmp/
 temp/
+data/develdata.db
 
 data/DoctrineORMModule/Proxy/
 data/DoctrineORMModule/cache/

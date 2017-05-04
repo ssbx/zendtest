@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Global Configuration Override
  *
@@ -10,7 +11,9 @@
  * control, so do not include passwords or other sensitive information in this
  * file.
  */
-
 return [
-    // ...
+    'db' => [
+        'driver' => 'Pdo',
+        'dsn' => sprintf('sqlite:%s/data/develdata.db', realpath(getcwd())),
+    ],
 ];
