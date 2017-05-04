@@ -2,3 +2,13 @@
 /vendor/
 /composer.lock
 /config/development.config.php
+
+data/logs/
+data/cache/
+data/sessions/
+data/tmp/
+temp/
+
+data/DoctrineORMModule/Proxy/
+data/DoctrineORMModule/cache/
+
