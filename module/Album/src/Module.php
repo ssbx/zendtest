@@ -27,7 +27,7 @@ class Module implements ConfigProviderInterface {
     public function getServiceConfig() {
         return [
             'factories' => [
-                Model\AlbumTable::class => function($container) {
+                Model\AlbumTable::class => function ($container) {
                     $tableGateway = $container->get(Model\AlbumTableGateway::class);
                     return new Model\AlbumTable($tableGateway);
                 },
@@ -44,9 +44,9 @@ class Module implements ConfigProviderInterface {
     public function getControllerConfig() {
         return [
             'factories' => [
-                Controller\AlbumController::class => function($container) {
+                Controller\AlbumController::class => function ($container) {
                     return new Controller\AlbumController(
-                            $container->get(Model\AlbumTable::class)
+                        $container->get(Model\AlbumTable::class)
                     );
                 },
             ],

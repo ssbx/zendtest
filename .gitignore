@@ -1,15 +1,17 @@
 /composer.phar
 /vendor/
 /composer.lock
+/composer.phar
 /config/development.config.php
 
-data/logs/
-data/cache/
-data/sessions/
-data/tmp/
-temp/
-data/develdata.db
+/data/logs/
+/data/cache/
+/data/sessions/
+/data/tmp/
+/temp/
+/data/develdata.db
 
-data/DoctrineORMModule/Proxy/
-data/DoctrineORMModule/cache/
+/data/DoctrineORMModule/Proxy/
+/data/DoctrineORMModule/cache/
 
+/Makefile

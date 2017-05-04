@@ -33,7 +33,6 @@
     },
     "extra": [],
     "scripts": {
-        "cs-check": "phpcs",
         "cs-fix": "phpcbf",
         "development-disable": "zf-development-mode disable",
         "development-enable": "zf-development-mode enable",
@@ -41,7 +40,7 @@
         "post-create-project-cmd": [
             "@development-enable"
         ],
-        "serve": "php -S 0.0.0.0:8080 -t public public/index.php",
+        "serve": "php -S localhost:8080 -t public public/index.php",
         "test": "phpunit"
     },
     "require-dev": {

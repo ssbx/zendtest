@@ -34,7 +34,7 @@ class AlbumTable {
         $row = $rowset->current();
         if (!$row) {
             throw new RuntimeException(sprintf(
-                    'Could not find row with identifier %d', $idInt
+                'Could not find row with identifier %d', $idInt
             ));
         }
 
@@ -56,7 +56,7 @@ class AlbumTable {
 
         if (!$this->getAlbum($id)) {
             throw new RuntimeException(sprintf(
-                    'Cannot update album with identifier %d; does not exist', $id
+                'Cannot update album with identifier %d; does not exist', $id
             ));
         }
 
