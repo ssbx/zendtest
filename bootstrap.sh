@@ -21,7 +21,9 @@ test:
 	php composer.phar run test
 
 clean_all:
-	git clean -Xdf
+	rm -rf data/logs/* data/cache/* data/sessions/* data/tmp/*
+	rm -rf temp data/develdata.db data/DoctrineORMModule/* vendor
+	rm -f Makefile composer.lock composer.phar config/development.config.php
 
 " > Makefile
 
