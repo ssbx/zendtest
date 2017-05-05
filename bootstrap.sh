@@ -9,7 +9,7 @@ php composer.phar install
 php composer.phar development-enable
 
 rm -f data/develdata.db
-sqlite3 data/develdata.db < data/schema.sql
+sqlite3 data/develdata.db < data/develdata.sql
 
 echo -n "
 .PHONY: run test
